@@ -92,20 +92,20 @@ export default function Quiz() {
         <Typography variant="h5">
           Quiz ({difficulty.toUpperCase()})
         </Typography>
-        <Typography variant="subtitle2" color="text.secondary">
+        {/* <Typography variant="subtitle2" color="text.secondary">
           Score: {score} / {questions.length}
-        </Typography>
+        </Typography> */}
       </Box>
 
       {/* Progress reflects current question */}
-      <LinearProgress
+      {/* <LinearProgress
         variant="determinate"
         value={progress}
         sx={{ height: 8, borderRadius: 4, mb: 1 }}
-      />
-      <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
+      /> */}
+      {/* <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
         Question {current + 1} / {questions.length} • {attemptedCount} attempted
-      </Typography>
+      </Typography> */}
 
       <Box sx={{ mt: 2 }}>
         <QuestionCard

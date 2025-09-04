@@ -22,7 +22,6 @@ export default function QuestionCard() {
   const navigate = useNavigate();
   const location = useLocation();
 
-  // ✅ get difficulty from Home.jsx (easy, medium, hard)
   const difficulty = location.state?.difficulty || "easy";
 
   // ✅ filter 10 questions by difficulty
@@ -33,13 +32,12 @@ export default function QuestionCard() {
   const [current, setCurrent] = useState(0);
   const [selected, setSelected] = useState(Array(questions.length).fill(null));
   const [locked, setLocked] = useState(Array(questions.length).fill(false));
-  const [skipped, setSkipped] = useState(Array(questions.length).fill(false)); // track skipped
+  const [skipped, setSkipped] = useState(Array(questions.length).fill(false));
   const [score, setScore] = useState(0);
   const [timeLeft, setTimeLeft] = useState(30);
 
   const q = questions[current];
 
-  // handle option click
   function handleSelect(index) {
     if (!locked[current]) {
       setSelected((s) => {
@@ -50,7 +48,6 @@ export default function QuestionCard() {
     }
   }
 
-  // lock/submit answer
   function lockAnswer(auto = false) {
     if (locked[current]) return;
 
@@ -61,25 +58,22 @@ export default function QuestionCard() {
     }
 
     if (auto) {
-      // wait a tiny bit to show submission effect
       setTimeout(() => next(), 500);
     }
   }
 
-  // go to next question
   function next() {
     tickSound.pause();
     tickSound.currentTime = 0;
 
     if (current < questions.length - 1) {
       setCurrent((c) => c + 1);
-      setTimeLeft(30); // reset timer
+      setTimeLeft(30);
     } else {
       finish();
     }
   }
 
-  // go to previous question
   function prev() {
     tickSound.pause();
     tickSound.currentTime = 0;
@@ -90,7 +84,6 @@ export default function QuestionCard() {
     }
   }
 
-  // finish quiz
   function finish() {
     tickSound.pause();
     tickSound.currentTime = 0;
@@ -101,9 +94,8 @@ export default function QuestionCard() {
   useEffect(() => {
     if (timeLeft <= 0) {
       if (selected[current] !== null && !locked[current]) {
-        lockAnswer(true); // auto-submit
+        lockAnswer(true);
       } else {
-        // 🚨 mark as skipped (red)
         setSkipped((s) => s.map((val, i) => (i === current ? true : val)));
         next();
       }
@@ -121,13 +113,28 @@ export default function QuestionCard() {
     return () => {
       clearInterval(timer);
       tickSound.pause();
-      tickSound.currentTime = 0; // reset when leaving question
+      tickSound.currentTime = 0;
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [timeLeft, current]);
+
+  // ✅ Progress calculation
+  const attemptedCount = locked.filter(Boolean).length + skipped.filter(Boolean).length;
+  const progress = Math.round((attemptedCount / questions.length) * 100);
 
   return (
     <Container maxWidth="xl" sx={{ py: 6 }}>
+      {/* Progress Bar */}
+      <Box sx={{ mb: 3 }}>
+        <LinearProgress
+          variant="determinate"
+          value={progress}
+          sx={{ height: 10, borderRadius: 5 }}
+        />
+        <Typography variant="body2" color="text.secondary" sx={{ mt: 1 }}>
+          Progress: {attemptedCount} / {questions.length}
+        </Typography>
+      </Box>
+
       <Grid container spacing={4}>
         {/* Left Side - Question + Options */}
         <Grid item xs={12} md={8}>
