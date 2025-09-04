@@ -1,0 +1,249 @@
+[
+  {
+    "id": 1,
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "question": "Which keyword declares a block-scoped variable in JavaScript?",
+    "options": ["var", "let", "const", "static"],
+    "answerIndex": 1
+  },
+  {
+    "id": 2,
+    "category": "Web",
+    "difficulty": "easy",
+    "question": "What does HTML stand for?",
+    "options": [
+      "Hyper Text Markup Language",
+      "High Transfer Markup Language",
+      "Home Tool Markup Language",
+      "Hyperlinks and Text Mark Language"
+    ],
+    "answerIndex": 0
+  },
+  {
+    "id": 3,
+    "category": "CSS",
+    "difficulty": "easy",
+    "question": "Which property changes the text color in CSS?",
+    "options": ["font-color", "text-color", "color", "foreground"],
+    "answerIndex": 2
+  },
+  {
+    "id": 4,
+    "category": "General",
+    "difficulty": "easy",
+    "question": "Which symbol is used for single-line comments in JavaScript?",
+    "options": ["//", "<!-- -->", "#", "/* */"],
+    "answerIndex": 0
+  },
+  {
+    "id": 5,
+    "category": "Web",
+    "difficulty": "easy",
+    "question": "Which HTML element is used for the largest heading?",
+    "options": ["<h6>", "<h1>", "<heading>", "<head>"],
+    "answerIndex": 1
+  },
+  {
+    "id": 6,
+    "category": "CSS",
+    "difficulty": "easy",
+    "question": "Which CSS property is used to set the background color?",
+    "options": ["bg-color", "background-color", "color", "background"],
+    "answerIndex": 1
+  },
+  {
+    "id": 7,
+    "category": "Web",
+    "difficulty": "easy",
+    "question": "What is the default port of HTTP?",
+    "options": ["21", "25", "80", "443"],
+    "answerIndex": 2
+  },
+  {
+    "id": 8,
+    "category": "JavaScript",
+    "difficulty": "easy",
+    "question": "Which function is used to print output to the console?",
+    "options": ["print()", "log()", "console.log()", "echo()"],
+    "answerIndex": 2
+  },
+  {
+    "id": 9,
+    "category": "General",
+    "difficulty": "easy",
+    "question": "Which company developed JavaScript?",
+    "options": ["Netscape", "Microsoft", "Oracle", "Sun Microsystems"],
+    "answerIndex": 0
+  },
+  {
+    "id": 10,
+    "category": "Web",
+    "difficulty": "easy",
+    "question": "Which HTML attribute specifies an image source?",
+    "options": ["href", "alt", "src", "link"],
+    "answerIndex": 2
+  },
+
+  {
+    "id": 11,
+    "category": "React",
+    "difficulty": "medium",
+    "question": "Which hook is used to manage component state in a functional component?",
+    "options": ["useEffect", "useState", "useMemo", "useRef"],
+    "answerIndex": 1
+  },
+  {
+    "id": 12,
+    "category": "React",
+    "difficulty": "medium",
+    "question": "What is the correct way to pass data to a child component?",
+    "options": ["context", "state", "props", "hooks"],
+    "answerIndex": 2
+  },
+  {
+    "id": 13,
+    "category": "General",
+    "difficulty": "medium",
+    "question": "Which HTTP status code means 'Not Found'?",
+    "options": ["200", "301", "404", "500"],
+    "answerIndex": 2
+  },
+  {
+    "id": 14,
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "question": "What is the output of: Array.isArray([])?",
+    "options": ["null", "undefined", "true", "false"],
+    "answerIndex": 2
+  },
+  {
+    "id": 15,
+    "category": "CSS",
+    "difficulty": "medium",
+    "question": "Which CSS layout module helps create flexible grids?",
+    "options": ["Flexbox", "Grid", "Float", "Table"],
+    "answerIndex": 1
+  },
+  {
+    "id": 16,
+    "category": "React",
+    "difficulty": "medium",
+    "question": "What does JSX stand for?",
+    "options": ["Java Syntax XML", "JavaScript XML", "JSON XML", "Java Server eXtension"],
+    "answerIndex": 1
+  },
+  {
+    "id": 17,
+    "category": "JavaScript",
+    "difficulty": "medium",
+    "question": "Which method converts a JSON string into a JavaScript object?",
+    "options": ["JSON.stringify()", "JSON.parse()", "parse.JSON()", "Object.parse()"],
+    "answerIndex": 1
+  },
+  {
+    "id": 18,
+    "category": "Web",
+    "difficulty": "medium",
+    "question": "Which HTTP method is idempotent?",
+    "options": ["POST", "GET", "PATCH", "DELETE"],
+    "answerIndex": 1
+  },
+  {
+    "id": 19,
+    "category": "General",
+    "difficulty": "medium",
+    "question": "Which database is document-oriented?",
+    "options": ["MySQL", "MongoDB", "PostgreSQL", "Oracle"],
+    "answerIndex": 1
+  },
+  {
+    "id": 20,
+    "category": "React",
+    "difficulty": "medium",
+    "question": "Which React hook runs after every render by default?",
+    "options": ["useEffect", "useState", "useRef", "useMemo"],
+    "answerIndex": 0
+  },
+
+  {
+    "id": 21,
+    "category": "React",
+    "difficulty": "hard",
+    "question": "In React Router v6, which hook is used for navigation imperatively?",
+    "options": ["Redirect", "useHistory", "useNavigate", "NavigationProvider"],
+    "answerIndex": 2
+  },
+  {
+    "id": 22,
+    "category": "Performance",
+    "difficulty": "hard",
+    "question": "Which React hook memoizes a computation to avoid recalculations?",
+    "options": ["useMemo", "useCallback", "useEffect", "useReducer"],
+    "answerIndex": 0
+  },
+  {
+    "id": 23,
+    "category": "Web",
+    "difficulty": "hard",
+    "question": "Which tag is used to include JavaScript in HTML?",
+    "options": ["<javascript>", "<js>", "<script>", "<code>"],
+    "answerIndex": 2
+  },
+  {
+    "id": 24,
+    "category": "React",
+    "difficulty": "hard",
+    "question": "Which hook is best for storing mutable values without causing re-render?",
+    "options": ["useMemo", "useRef", "useCallback", "useReducer"],
+    "answerIndex": 1
+  },
+  {
+    "id": 25,
+    "category": "JavaScript",
+    "difficulty": "hard",
+    "question": "Which operator is used for optional chaining?",
+    "options": ["?.", "??", "||", "::"],
+    "answerIndex": 0
+  },
+  {
+    "id": 26,
+    "category": "General",
+    "difficulty": "hard",
+    "question": "What is the time complexity of binary search?",
+    "options": ["O(1)", "O(n)", "O(log n)", "O(n log n)"],
+    "answerIndex": 2
+  },
+  {
+    "id": 27,
+    "category": "CSS",
+    "difficulty": "hard",
+    "question": "Which CSS property creates a stacking context?",
+    "options": ["position", "z-index", "opacity", "transform"],
+    "answerIndex": 3
+  },
+  {
+    "id": 28,
+    "category": "React",
+    "difficulty": "hard",
+    "question": "Which hook is used for performance optimization by memoizing callbacks?",
+    "options": ["useEffect", "useState", "useMemo", "useCallback"],
+    "answerIndex": 3
+  },
+  {
+    "id": 29,
+    "category": "Web",
+    "difficulty": "hard",
+    "question": "Which HTTP header is used for CORS?",
+    "options": ["Access-Control-Allow-Origin", "Content-Type", "Cache-Control", "Authorization"],
+    "answerIndex": 0
+  },
+  {
+    "id": 30,
+    "category": "General",
+    "difficulty": "hard",
+    "question": "Which algorithm is used in HTTPS encryption?",
+    "options": ["RSA", "SHA-256", "AES", "All of the above"],
+    "answerIndex": 3
+  }
+]
