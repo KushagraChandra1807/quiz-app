@@ -1,4 +1,4 @@
-# Quiz App Modern
+# Quiz Lab
 
 A modern and interactive quiz application built with **React**, **Vite**, and styled using **Material UI** and **Mantine UI**. The app provides a smooth user experience with animations powered by **Framer Motion** and **GSAP**.
 
