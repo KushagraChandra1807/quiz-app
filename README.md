@@ -34,10 +34,37 @@ quiz-app/
 
 ## 🛠️ Tech Stack
 
-* **Frontend:** React 18, Vite 5
-* **UI Libraries:** Material UI, Mantine UI
-* **Animations:** Framer Motion, GSAP
-* **Routing:** React Router DOM
+### **Core**
+
+* **React 18** – UI library for building components
+* **React DOM** – DOM rendering for React
+* **Vite 5** – Lightning-fast frontend build tool
+
+### **UI & Styling**
+
+* **Material UI (MUI 5)** – React components for modern UI
+* **MUI Icons** – Material Design icons
+* **Mantine UI** – Additional UI components & hooks
+* **Emotion** – CSS-in-JS styling (`@emotion/react`, `@emotion/styled`)
+
+### **Routing**
+
+* **React Router DOM 6** – Client-side routing and navigation
+
+### **Animations**
+
+* **Framer Motion 11** – Declarative animations for React
+* **GSAP 3** – Advanced timeline-based animations
+
+### **Utilities**
+
+* **Popper.js** – Tooltip & popover positioning engine (used internally by MUI)
+* **React-is** – Utility for handling React element types (used internally by MUI/React ecosystem)
+
+### **Build & Dev**
+
+* **Vite Plugin React** – React support for Vite
+* **Node.js 22.x** – Runtime environment
 
 ---
 
@@ -81,9 +108,6 @@ quiz-app/
 <img width="1919" height="908" alt="image" src="https://github.com/user-attachments/assets/0c9e97f1-cf65-42ec-af3c-e0f853e70373" />
 <img width="1919" height="905" alt="image" src="https://github.com/user-attachments/assets/92b45ff7-385d-42d2-90bb-9ca9256809e3" />
 <img width="1642" height="900" alt="image" src="https://github.com/user-attachments/assets/17dc8daf-6a2c-46a3-9854-48773d6a299c" />
-
-
-
 
 ---
 
